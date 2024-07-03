@@ -30,8 +30,14 @@ jobs:
           current_date=$(date -u +"%Y-%m-%d %H:%M:%S")
           new_entry="# $current_date\n$changelog_content"
 
-          # Check if the new changelog content already exists in the file
-          if ! grep -Fxq "$changelog_content" docs/updates.txt; then
+          # Generate hash of the new changelog content
+          new_entry_hash=$(echo "$new_entry" | sha256sum)
+
+          # Generate hash of the existing file content
+          file_hash=$(cat docs/updates.txt | sha256sum)
+
+          # Compare the hashes and append if they are different
+          if [ "$new_entry_hash" != "$file_hash" ]; then
             echo "$new_entry" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
             echo "new_changes=true" >> $GITHUB_ENV
           else
