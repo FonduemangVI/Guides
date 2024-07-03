@@ -26,7 +26,7 @@ jobs:
         id: check_append
         run: |
           echo "Checking and appending changelog to file if new"
-          changelog_content="$(echo -e "${{ steps.build_changelog.outputs.changelog }}\n")"
+          changelog_content="${{ steps.build_changelog.outputs.changelog }}"
           current_date=$(date -u +"%Y-%m-%d %H:%M:%S")
           new_entry=$(cat <<EOF
           # $current_date
@@ -34,8 +34,16 @@ jobs:
           EOF
           )
 
+          # Ensure the new entry ends with a newline
+          new_entry="${new_entry}\n"
+
+          # Ensure the existing updates file ends with a newline
+          if [ -s docs/updates.txt ] && [ "$(tail -c 1 docs/updates.txt)" != "" ]; then
+            echo "" >> docs/updates.txt
+          fi
+
           # Append the new entry to a temporary file
-          echo "$new_entry" | cat - docs/updates.txt > temp
+          echo -e "$new_entry" | cat - docs/updates.txt > temp
 
           # Generate hashes of the original and new file content
           original_hash=$(sha256sum docs/updates.txt | cut -d ' ' -f 1)
