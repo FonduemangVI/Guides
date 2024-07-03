@@ -1,4 +1,26 @@
 
+# 2024-07-03 06:07:28
+### Radarr - Updates
+
+- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
+
+### Sonarr - Updates
+
+- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
+
+### Others
+
+- [test](https://github.com/FonduemangVI/Guides/pull/6)
+- [testing](https://github.com/FonduemangVI/Guides/pull/4)
+- [testing](https://github.com/FonduemangVI/Guides/pull/5)
+
+
+- [test](https://github.com/FonduemangVI/Guides/pull/6)
+- [testing](https://github.com/FonduemangVI/Guides/pull/4)
+- [testing](https://github.com/FonduemangVI/Guides/pull/5)
+
+
+
 # 2024-07-03 06:06:38
 ### Radarr - Updates
 
