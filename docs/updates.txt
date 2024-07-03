@@ -1675,22 +1675,3 @@ Test changes
 
 # 2022-01-14
 Initial Release for the new changelog.
-### Radarr - Updates
-
-- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
-
-### Sonarr - Updates
-
-- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
-
-### Others
-
-- [test](https://github.com/FonduemangVI/Guides/pull/6)
-- [testing](https://github.com/FonduemangVI/Guides/pull/4)
-- [testing](https://github.com/FonduemangVI/Guides/pull/5)
-
-
-- [test](https://github.com/FonduemangVI/Guides/pull/6)
-- [testing](https://github.com/FonduemangVI/Guides/pull/4)
-- [testing](https://github.com/FonduemangVI/Guides/pull/5)
-
