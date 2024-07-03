@@ -42,30 +42,16 @@ jobs:
             echo "" >> docs/updates.txt
           fi
 
-          # Extract the last changelog entry date from the existing file
-          last_entry_date=$(grep -m 1 '^# ' docs/updates.txt | head -n 1 | cut -d ' ' -f 2-)
-
-          # Check if the new entry is already present
-          if grep -q "$last_entry_date" <<< "$new_entry"; then
+          # Check if the new entry is already in the file
+          if grep -Fq "$changelog_content" docs/updates.txt; then
             echo "No new changelog content to append."
             echo "new_changes=false" >> $GITHUB_ENV
           else
             # Append the new entry to the updates file
             echo -e "$new_entry" | cat - docs/updates.txt > temp
 
-            # Generate hashes of the original and new file content
-            original_hash=$(sha256sum docs/updates.txt | cut -d ' ' -f 1)
-            new_file_hash=$(sha256sum temp | cut -d ' ' -f 1)
-
-            # Compare the hashes and move the temporary file if they are different
-            if [ "$original_hash" != "$new_file_hash" ]; then
-              mv temp docs/updates.txt
-              echo "new_changes=true" >> $GITHUB_ENV
-            else
-              echo "No new changelog content to append."
-              echo "new_changes=false" >> $GITHUB_ENV
-              rm temp
-            fi
+            mv temp docs/updates.txt
+            echo "new_changes=true" >> $GITHUB_ENV
           fi
 
       - name: Commit changes
