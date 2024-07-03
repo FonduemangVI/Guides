@@ -23,13 +23,24 @@ jobs:
 
       # Change the update file
       - name: Append changelog to file
+        id: check_append
         run: |
-          echo "Prepending changelog to file with date and time"
+          echo "Checking and appending changelog to file if new"
           changelog_content="${{ steps.build_changelog.outputs.changelog }}"
           current_date=$(date -u +"%Y-%m-%d %H:%M:%S")
-          echo -e "\n# $current_date\n$changelog_content\n" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
+          new_entry="# $current_date\n$changelog_content"
+
+          # Check if the new changelog content already exists in the file
+          if ! grep -Fxq "$changelog_content" docs/updates.txt; then
+            echo "$new_entry" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
+            echo "new_changes=true" >> $GITHUB_ENV
+          else
+            echo "No new changelog content to append."
+            echo "new_changes=false" >> $GITHUB_ENV
+          fi
 
       - name: Commit changes
+        if: env.new_changes == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
