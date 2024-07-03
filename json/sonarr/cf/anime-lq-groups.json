@@ -133,6 +133,15 @@
       }
     },
     {
+      "name": "Anitsu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Anitsu)\\b"
+      }
+    },
+    {
       "name": "AniVoid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -484,15 +493,6 @@
       }
     },
     {
-      "name": "Kaerizaki-Fansub",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Kaerizaki-Fansub)\\b"
-      }
-    },
-    {
       "name": "Kanjouteki",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -625,6 +625,15 @@
       "required": false,
       "fields": {
         "value": "\\b(MiniFreeza)\\b"
+      }
+    },
+    {
+      "name": "MiniMTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MiniMTBB)\\b"
       }
     },
     {

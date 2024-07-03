@@ -15,14 +15,14 @@
         <link rel="canonical" href="https://trash-guides.info/Plex/Tips/Plex-media-server/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../Optimal-plex-client-settings/">
       
       
-        <link rel="next" href="../Optimal-plex-client-settings/">
+        <link rel="next" href="../../profiles/">
       
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -30,12 +30,18 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 8C119 8 8 119.1 8 256c0 137 111 248 248 248s248-111 248-248C504 119.1 393 8 256 8zm0 448c-110.5 0-200-89.4-200-200 0-110.5 89.5-200 200-200 110.5 0 200 89.5 200 200 0 110.5-89.4 200-200 200zm107.2-255.2c0 67.1-72.4 68.1-72.4 92.9V300c0 6.6-5.4 12-12 12h-45.6c-6.6 0-12-5.4-12-12v-8.7c0-35.7 27.1-50 47.6-61.5 17.6-9.8 28.3-16.5 28.3-29.6 0-17.2-22-28.7-39.8-28.7-23.2 0-33.9 11-48.9 30-4.1 5.1-11.5 6.1-16.7 2.1l-27.8-21.1c-5.1-3.9-6.3-11.1-2.6-16.4C184.8 131.5 214.9 112 261.8 112c49.1 0 101.5 38.3 101.5 88.8zM298 368c0 23.2-18.8 42-42 42s-42-18.8-42-42 18.8-42 42-42 42 18.8 42 42z"/></svg>');}</style>
 
 
     
@@ -74,17 +80,15 @@
     
     
    <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -199,7 +203,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -216,7 +220,7 @@
         <a href="https://github.com/TRaSH-Guides/Guides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     TRaSH-Guides
@@ -470,7 +474,7 @@
       <a href="https://github.com/TRaSH-Guides/Guides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     TRaSH-Guides
@@ -509,20 +513,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -656,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -677,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -698,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -759,11 +761,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
@@ -916,20 +919,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1063,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1084,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1105,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1166,104 +1167,18 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
         
           
           <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Sonarr v3 (Legacy)
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
-            <span class="md-nav__icon md-icon"></span>
-            Sonarr v3 (Legacy)
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Sonarr/Sonarr-Release-Profile-RegEx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Release Profile RegEx (WEB-DL)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Release Profile RegEx (Anime)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1274,8 +1189,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
             <span class="md-nav__icon md-icon"></span>
             Tips
           </label>
@@ -1368,20 +1283,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1431,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1452,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1473,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -1499,20 +1412,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1623,11 +1534,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
@@ -1696,20 +1608,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1757,11 +1667,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
@@ -1865,11 +1776,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
@@ -1973,11 +1885,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
@@ -2115,11 +2028,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4_6" >
@@ -2210,11 +2124,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
@@ -2331,11 +2246,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_5" >
@@ -2447,11 +2363,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
@@ -2543,14 +2460,15 @@
     
     
     
-    
-    
+      
+        
+        
       
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
@@ -2599,69 +2517,10 @@
                 
   
   
-    
   
   
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tips
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tips
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Suggested Plex Media Server Settings
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="/Plex/Tips/Plex-media-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2670,386 +2529,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Settings
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Settings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#remote-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remote Access
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#agents" class="md-nav__link">
-    <span class="md-ellipsis">
-      Agents
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#library" class="md-nav__link">
-    <span class="md-ellipsis">
-      Library
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Library">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scan-my-library-automatically" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scan my library automatically
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-a-partial-scan-when-changes-are-detected" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a partial scan when changes are detected
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#include-music-libraries-in-automatic-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Include music libraries in automatic updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scan-my-library-periodically" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scan my library periodically
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#empty-trash-automatically-after-every-scan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Empty trash automatically after every scan
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#allow-media-deletion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Allow media deletion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-scanner-tasks-at-a-lower-priority" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run scanner tasks at a lower priority
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-video-preview-thumbnails" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate video preview thumbnails
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-intro-video-markers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate intro video markers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-chapter-thumbnails" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate chapter thumbnails
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#network" class="md-nav__link">
-    <span class="md-ellipsis">
-      Network
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Network">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#enable-ipv6-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable IPv6 support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#secure-connections" class="md-nav__link">
-    <span class="md-ellipsis">
-      Secure connections
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preferred-network-interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preferred network interface
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#strict-tls-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Strict TLS configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-local-network-discovery-gdm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable local network discovery (GDM)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remote-streams-allowed-per-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Remote streams allowed per user
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lan-networks" class="md-nav__link">
-    <span class="md-ellipsis">
-      LAN Networks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#treat-wan-ip-as-lan-bandwidth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Treat WAN IP As LAN Bandwidth
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-relay" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable Relay
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#custom-server-access-urls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom server access URLs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#webhooks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Webhooks
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#transcoders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transcoders
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Transcoders">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#transcoder-quality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transcoder quality
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#transcoder-temporary-directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transcoder temporary directory
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enable-hdr-tone-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable HDR tone mapping
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-hardware-acceleration-when-available" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use hardware acceleration when available
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-hardware-accelerated-video-encoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use hardware-accelerated video encoding
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Manage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Manage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Libraries
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Libraries">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#movies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Movies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tv" class="md-nav__link">
-    <span class="md-ellipsis">
-      TV
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3062,7 +2541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Optimal-plex-client-settings/" class="md-nav__link">
+      <a href="/Plex/Tips/Optimal-plex-client-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3083,11 +2562,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../4k-transcoding/" class="md-nav__link">
+      <a href="../../what-does-my-media-player-support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    JBOPS 4K Transcode Stopping with Tautulli
+    What does my media player support
   </span>
   
 
@@ -3097,9 +2576,22 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Plex/Tips/4k-transcoding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stop 4k Video Transcoding
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3142,20 +2634,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3210,20 +2700,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3341,20 +2829,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3402,11 +2888,12 @@
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" >
@@ -4073,7 +3560,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -4095,9 +3582,9 @@
 
 <h1 id="suggested-plex-media-server-settings">Suggested Plex Media Server Settings<a class="headerlink" href="#suggested-plex-media-server-settings" title="Permanent link"></a></h1>
 <p>So, what are the best Plex Media Server settings?</p>
-<p>This is something that can't really be answered because it depends on the use case and your personal preference.</p>
+<p>This is something that can't be answered, as it depends on the use case and your personal preference.</p>
 <div class="admonition danger">
-<p>Here I will provide some suggestions and try to explain why I recommend these settings. Adjust it to your own liking and keep in mind that it is only a suggestion. I'm not a Plex Pro in anyway <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -4107,7 +3594,7 @@
 <p><a class="glightbox" href="../images/plex-settings-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex App" src="../images/plex-settings-icon.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">Why didn't you cover option .... ?</p>
-<p>I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+<p>We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://trash-guides.info/assets/discord.png" /></a></p>
 </div>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/settings-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex: Settings" src="../images/settings-settings.png" /></a></p>
@@ -4118,9 +3605,9 @@
 <li>Enable/Disable Remote access (if you disable it ignore the rest of these settings)</li>
 <li>LAN/container IP</li>
 <li>Public IP <strong>If you need to provide a screenshot always mask this IP <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></strong></li>
-<li>Manually specify public port if you run Docker or want a fixed port.</li>
+<li>Manually specify a public port if you run Docker or want a fixed port.</li>
 <li>Enter the Plex port you want to use. (default: <code>32400</code>)</li>
-<li>Click on <code>Apply</code> and when everything is setup correctly, your Plex Media Server should be fully accessible outside of your network, so you can connect to your Plex  server from outside. You may also need to configure port forwarding on your router. Detailed instructions are available <a href="https://support.plex.tv/articles/200931138-troubleshooting-remote-access/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
+<li>Click on <code>Apply</code> and when everything is set up correctly, your Plex Media Server should be fully accessible outside of your network, so you can connect to your Plex server from outside. You may also need to configure port forwarding on your router. Detailed instructions are available <a href="https://support.plex.tv/articles/200931138-troubleshooting-remote-access/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
 <li>Enter your internet upload speed here and Plex can ensure it operates within this boundary.</li>
 <li>Set the maximum bitrate of a remote stream from this server.</li>
 </ol>
@@ -4138,13 +3625,13 @@
 </div>
 <details class="tip">
 <summary>TIP - Autoscan - [Click to show/hide]</summary>
-<p>If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel I collaborate with) has a video explaining it in further detail.</p>
+<p>If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<p>Please don't forget to check out his other Unraid Video's <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
+<p>Please don't forget to check out his other Unraid Videos <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </details>
 <h4 id="run-a-partial-scan-when-changes-are-detected">Run a partial scan when changes are detected<a class="headerlink" href="#run-a-partial-scan-when-changes-are-detected" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Run a partial scan when changes are detected" src="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png" /></a></p>
-<p>When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).</p>
+<p>When changes to library folders are detected, only scan the folder that has changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
@@ -4156,7 +3643,7 @@
 <p>Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
-<p><em>Do you need a extra scan for your library to recognize new media?</em></p>
+<p><em>Do you need an extra scan for your library to recognize new media?</em></p>
 </div>
 <h4 id="empty-trash-automatically-after-every-scan">Empty trash automatically after every scan<a class="headerlink" href="#empty-trash-automatically-after-every-scan" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-empty-trash-automatically-after-every-scan.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Empty trash automatically after every scan" src="../images/settings-library-empty-trash-automatically-after-every-scan.png" /></a></p>
@@ -4166,17 +3653,17 @@
 </div>
 <h4 id="allow-media-deletion">Allow media deletion<a class="headerlink" href="#allow-media-deletion" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-allow-media-deletion.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Allow media deletion" src="../images/settings-library-allow-media-deletion.png" /></a></p>
-<p>The owner of the server will be allowed to delete media files from disk.</p>
+<p>The owner of the server will be allowed to delete media files from the disk.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
-<p><em>In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)</em></p>
+<p><em>In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've set up Plex with Read Only access to the media library)</em></p>
 </div>
 <h4 id="run-scanner-tasks-at-a-lower-priority">Run scanner tasks at a lower priority<a class="headerlink" href="#run-scanner-tasks-at-a-lower-priority" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Run scanner tasks at a lower priority" src="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png" /></a></p>
 <p>On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
-<p><em>Makes sure it uses less resources and ensure they do not interfere with regular streaming.</em></p>
+<p><em>This makes sure it uses fewer resources and ensures they do not interfere with regular streaming.</em></p>
 </div>
 <h4 id="generate-video-preview-thumbnails">Generate video preview thumbnails<a class="headerlink" href="#generate-video-preview-thumbnails" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-generate-video-preview-thumbnails.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Generate video preview thumbnails" src="../images/settings-library-generate-video-preview-thumbnails.png" /></a></p>
@@ -4229,10 +3716,10 @@
 </div>
 <h4 id="preferred-network-interface">Preferred network interface<a class="headerlink" href="#preferred-network-interface" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-network-preferred-network-interface.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Network - Preferred network interface" src="../images/settings-network-preferred-network-interface.png" /></a></p>
-<p>For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.</p>
+<p>For users with multiple network cards or systems such as NAS or Docker where there is always another network interface that Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.</p>
+<p>If you have Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.</p>
 </div>
 <div class="admonition success">
 <p><strong>Suggested: <code>Whatever suits your setup</code></strong></p>
@@ -4245,7 +3732,7 @@
 </div>
 <h4 id="enable-local-network-discovery-gdm">Enable local network discovery (GDM)<a class="headerlink" href="#enable-local-network-discovery-gdm" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-network-enable-local-network-discovery-%28gdm%29.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Network - Enable local network discovery (GDM)" src="../images/settings-network-enable-local-network-discovery-%28gdm%29.png" /></a></p>
-<p>Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.</p>
+<p>Enable “G’Day Mate” discovery. This is used to allow Plex apps and servers to find each other automatically on a local network.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
@@ -4270,21 +3757,21 @@
 </div>
 <h4 id="enable-relay">Enable Relay<a class="headerlink" href="#enable-relay" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-network-enable-relay.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Network - Enable Relay" src="../images/settings-network-enable-relay.png" /></a></p>
-<p>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.</p>
+<p>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth-limited.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.</em></p>
 </div>
 <h4 id="custom-server-access-urls">Custom server access URLs<a class="headerlink" href="#custom-server-access-urls" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-network-custom-server-access-urls.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Network - Custom server access URLs" src="../images/settings-network-custom-server-access-urls.png" /></a></p>
-<p>A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.</p>
+<p>A comma-separated list of URLs (either HTTP or HTTPS) that will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with a subdomain.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
 <p><em>Example: <code>https://plex.mycustomdomain.com:32400</code></em></p>
 </div>
 <h4 id="webhooks">Webhooks<a class="headerlink" href="#webhooks" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-network-webhooks.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Network - Webhooks" src="../images/settings-network-webhooks.png" /></a></p>
-<p>This feature can be enabled to allow your server to send events to external services. For example <a href="/Notifiarr/Quick-Start/" rel="noopener noreferrer" target="_blank">Notifiarr</a></p>
+<p>This feature can be enabled to allow your server to send events to external services. For example <a href="https://notifiarr.com/" rel="noopener noreferrer" target="_blank">Notifiarr</a></p>
 <hr />
 <h3 id="transcoders">Transcoders<a class="headerlink" href="#transcoders" title="Permanent link"></a></h3>
 <h4 id="transcoder-quality">Transcoder quality<a class="headerlink" href="#transcoder-quality" title="Permanent link"></a></h4>
@@ -4299,7 +3786,7 @@
 <p>Directory to use when transcoding temporary files for streaming.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup, if possible, your RAM (disk)</code></strong></p>
-<p><em>Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.</em></p>
+<p><em>Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be written to a disk.</em></p>
 <p><em>If you run docker set this to <code>/transcode</code> and map it to <code>/tmp/plex</code></em></p>
 <p><em>Default Linux only allocates a max of 50% of total system RAM to any ram directories (ie. /tmp, /dev/shm, etc.)</em></p>
 <div class="admonition danger">
@@ -4312,11 +3799,11 @@
 <p>This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
-<p><em>Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.</em></p>
+<p><em>Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle to convert 4K content in real-time, unless you’re running on a very powerful system.</em></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed out” colors that occur when converting HDR content without tone mapping.</p>
+<p>Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed-out” colors that occur when converting HDR content without tone mapping.</p>
 </div>
 <h4 id="use-hardware-acceleration-when-available">Use hardware acceleration when available<a class="headerlink" href="#use-hardware-acceleration-when-available" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-transcoder-use-hardware-acceleration-when-available.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Transcoder - Use hardware acceleration when available" src="../images/settings-transcoder-use-hardware-acceleration-when-available.png" /></a></p>
@@ -4334,7 +3821,7 @@
 <h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/settings-manage.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Manage" src="../images/settings-manage.png" /></a></p>
 <h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link"></a></h3>
-<p>Here you will find your libraries you've added to your Plex Media Server.</p>
+<p>Here you will find the libraries you've added to your Plex Media Server.</p>
 <details class="example">
 <summary>Examples - [Click to show/hide]</summary>
 <ul>
@@ -4351,7 +3838,7 @@
 </ul>
 </details>
 <div class="admonition info">
-<p class="admonition-title">I will only cover the libraries settings for Movies and TV shows</p>
+<p class="admonition-title">I will only cover the library settings for Movies and TV shows</p>
 </div>
 <h4 id="movies">Movies<a class="headerlink" href="#movies" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/manage-libraries-movies-part1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part1.png" /></a></p>
@@ -4360,7 +3847,7 @@
 <p>The new version of the Plex Movie agent/scanner</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Plex Movie</code></strong></p>
-<p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.</em></p>
+<p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level so that different libraries using the same agent can have different agent settings.</em></p>
 </div>
 </li>
 </ol>
@@ -4370,7 +3857,7 @@
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
-<p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
+<p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research, it seems it isn't needed.
 If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
@@ -4378,7 +3865,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p>When scanning this library, prefer embedded tags and local files if present.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
-<p><em>If enabled you could end up with weird movie naming you don't want, happens especially from releases from <code>RARBG</code></em></p>
+<p><em>If enabled, you could end up with weird movie naming you don't want, such as those from <code>RARBG</code></em></p>
 </div>
 </li>
 </ol>
@@ -4423,7 +3910,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p>The new version of the Plex Movie agent/scanner</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Plex TV Series</code></strong></p>
-<p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.</em></p>
+<p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level so that different libraries using the same agent can have different agent settings.</em></p>
 </div>
 </li>
 </ol>
@@ -4435,7 +3922,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
-<p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
+<p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research, it seems it isn't needed.
 If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
@@ -4446,7 +3933,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p>When scanning this library, prefer embedded tags and local files if present.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
-<p><em>If enabled you could end up with weird movie naming you don't want, happens especially from releases from <code>RARBG</code></em></p>
+<p><em>If enabled, you could end up with weird movie naming you don't want, such as those from <code>RARBG</code></em></p>
 </div>
 </li>
 </ol>
@@ -4482,23 +3969,22 @@ If you want you could disable it, the choice is yours.</em></p>
 </li>
 </ol>
 <hr />
-<p>For the information of this guide, I made use of the following sources</p>
+<p>For the information in this guide, we made use of the following sources</p>
 <ul>
-<li>Information I gathered from Several Discord servers</li>
+<li>Information we gathered from Several Discord servers</li>
 <li><a href="https://support.plex.tv/articles/" rel="noopener noreferrer" target="_blank">Plex Support Articles</a></li>
 <li>Extra Information gathered from a Plex employee</li>
 <li>Own experience</li>
 </ul>
-<!-- BEGIN INCLUDE ../../../includes/support.md -->
-
+<!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
-<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
-<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+<p><center>If you have questions or suggestions, click the button below to join our Discord server.</center></p>
+<p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
+<center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
-<!-- END INCLUDE -->
-<!-- --8<-- "includes/support.md" -->
+<!-- markdownlint-enable MD041-->
 
 
 
@@ -4509,6 +3995,8 @@ If you want you could disable it, the choice is yours.</em></p>
   
     
   
+  
+    
   
 
 
@@ -4519,10 +4007,19 @@ If you want you could disable it, the choice is yours.</em></p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 26, 2023 16:06:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 25, 2021 17:17:13</span>
+  </span>
+
     
     
     
@@ -4535,12 +4032,18 @@ If you want you could disable it, the choice is yours.</em></p>
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>
@@ -4564,7 +4067,7 @@ If you want you could disable it, the choice is yours.</em></p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 TRaSH
+      Copyright &copy; 2024 TRaSH
     </div>
   
   
@@ -4585,7 +4088,7 @@ If you want you could disable it, the choice is yours.</em></p>
       
     
     <a href="https://trash-guides.info/discord" target="_blank" rel="noopener" title="trash-guides.info" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
     </a>
   
     
@@ -4596,7 +4099,7 @@ If you want you could disable it, the choice is yours.</em></p>
       
     
     <a href="https://github.com/TRaSH-Guides/Guides" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
     </a>
   
 </div>
@@ -4611,11 +4114,13 @@ If you want you could disable it, the choice is yours.</em></p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
