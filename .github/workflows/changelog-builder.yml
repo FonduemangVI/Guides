@@ -42,8 +42,13 @@ jobs:
             echo "" >> docs/updates.txt
           fi
 
-          # Check if the new entry is already in the file
-          if grep -Fq "$changelog_content" docs/updates.txt; then
+          # Hash the new changelog content
+          new_entry_hash=$(echo -e "$new_entry" | sha256sum | cut -d ' ' -f 1)
+
+          # Check if the hash of the new entry matches any existing entry
+          existing_hashes=$(sha256sum docs/updates.txt | cut -d ' ' -f 1)
+
+          if echo "$existing_hashes" | grep -q "$new_entry_hash"; then
             echo "No new changelog content to append."
             echo "new_changes=false" >> $GITHUB_ENV
           else
