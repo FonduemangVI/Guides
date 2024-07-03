@@ -28,7 +28,11 @@ jobs:
           echo "Checking and appending changelog to file if new"
           changelog_content="${{ steps.build_changelog.outputs.changelog }}"
           current_date=$(date -u +"%Y-%m-%d %H:%M:%S")
-          new_entry="# $current_date\n$changelog_content"
+          new_entry=$(cat <<EOF
+          # $current_date
+          $changelog_content
+          EOF
+          )
 
           # Generate hash of the new changelog content
           new_entry_hash=$(echo "$new_entry" | sha256sum)
