@@ -22,10 +22,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Change the update file
-      - name: Modify updates.txt
-        uses: jaywcjlove/github-action-modify-file-content@main
-        with:
-          path: docs/updates.txt
-          body: "#{{date:YYYY-MM-DD HH:mm}}\n${{ steps.build_changelog.outputs.changelog }}"
-          openDelimiter: ""
-          closeDelimiter: ""
+      - name: Append changelog to file
+        run: |
+          echo "Appending changelog to file"
+          echo "${{ steps.build_changelog.outputs.changelog }}" >> docs/updates.txt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/updates.txt
+          git commit -m 'Update updates.txt'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
