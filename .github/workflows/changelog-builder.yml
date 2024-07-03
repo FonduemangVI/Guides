@@ -34,19 +34,21 @@ jobs:
           EOF
           )
 
-          # Generate hash of the new changelog content
-          new_entry_hash=$(echo "$new_entry" | sha256sum)
+          # Append the new entry to a temporary file
+          echo "$new_entry" | cat - docs/updates.txt > temp
 
-          # Generate hash of the existing file content
-          file_hash=$(cat docs/updates.txt | sha256sum)
+          # Generate hashes of the original and new file content
+          original_hash=$(sha256sum docs/updates.txt | awk '{ print \$1 }')
+          new_file_hash=$(sha256sum temp | awk '{ print \$1 }')
 
-          # Compare the hashes and append if they are different
-          if [ "$new_entry_hash" != "$file_hash" ]; then
-            echo "$new_entry" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
+          # Compare the hashes and move the temporary file if they are different
+          if [ "$original_hash" != "$new_file_hash" ]; then
+            mv temp docs/updates.txt
             echo "new_changes=true" >> $GITHUB_ENV
           else
             echo "No new changelog content to append."
             echo "new_changes=false" >> $GITHUB_ENV
+            rm temp
           fi
 
       - name: Commit changes
