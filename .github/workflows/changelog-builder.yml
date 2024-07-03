@@ -24,8 +24,10 @@ jobs:
       # Change the update file
       - name: Append changelog to file
         run: |
-          echo "Appending changelog to file"
-          echo "${{ steps.build_changelog.outputs.changelog }}" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
+          echo "Prepending changelog to file with date and time"
+          changelog_content="${{ steps.build_changelog.outputs.changelog }}"
+          current_date=$(date -u +"%Y-%m-%d %H:%M:%S")
+          echo -e "\n# $current_date\n$changelog_content\n" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
 
       - name: Commit changes
         run: |
