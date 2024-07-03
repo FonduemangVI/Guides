@@ -1,3 +1,22 @@
+# 2024-07-03 06:23:45
+### Radarr - Updates
+
+- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
+
+### Sonarr - Updates
+
+- [Update to match main guide repo](https://github.com/FonduemangVI/Guides/pull/7)
+
+### Others
+
+- [test](https://github.com/FonduemangVI/Guides/pull/6)
+- [testing](https://github.com/FonduemangVI/Guides/pull/4)
+- [testing](https://github.com/FonduemangVI/Guides/pull/5)
+
+
+- [test](https://github.com/FonduemangVI/Guides/pull/6)
+- [testing](https://github.com/FonduemangVI/Guides/pull/4)
+- [testing](https://github.com/FonduemangVI/Guides/pull/5)
 # 2024-06-15 22:00
 - [feat(guides): Add hallowed to (U)HD Bluray Tier 03 and create new hallowed Radarr custom format (#1978)](https://github.com/TRaSH-Guides/Guides/pull/1978)
 
