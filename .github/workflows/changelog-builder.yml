@@ -25,7 +25,7 @@ jobs:
       - name: Append changelog to file
         run: |
           echo "Appending changelog to file"
-          echo "${{ steps.build_changelog.outputs.changelog }}" >> docs/updates.txt
+          echo "${{ steps.build_changelog.outputs.changelog }}" | cat - docs/updates.txt > temp && mv temp docs/updates.txt
 
       - name: Commit changes
         run: |
