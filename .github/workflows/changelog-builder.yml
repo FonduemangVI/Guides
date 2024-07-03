@@ -38,8 +38,8 @@ jobs:
           echo "$new_entry" | cat - docs/updates.txt > temp
 
           # Generate hashes of the original and new file content
-          original_hash=$(sha256sum docs/updates.txt | awk '{ print \$1 }')
-          new_file_hash=$(sha256sum temp | awk '{ print \$1 }')
+          original_hash=$(sha256sum docs/updates.txt | cut -d ' ' -f 1)
+          new_file_hash=$(sha256sum temp | cut -d ' ' -f 1)
 
           # Compare the hashes and move the temporary file if they are different
           if [ "$original_hash" != "$new_file_hash" ]; then
