@@ -11,7 +11,7 @@
 This Guide exist out of 4 Sections
 
 1. This page with a short description.
-1. [How to setup for](/Hardlinks/How-to-setup-for/) your installation method.
+1. [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
 1. [Examples](/Hardlinks/Examples/) what you should use for your path settings in your used applications.
 1. [Check if hardlinks are working](/Hardlinks/Check-if-hardlinks-are-working/)
 
@@ -21,7 +21,7 @@ So you want one of the following ?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
 - You want to perma seed?
 
-Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installation method.
+Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
 
 ## FAQ
 
@@ -36,19 +36,20 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
         This means:
 
-          - You can delete any "copy" w/o impacting the others.
+            - You can delete any "copy" w/o impacting the others.
 
-            Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
+                Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
 
-          - Space is only regained when all "copies" are deleted.
+            - Space is only regained when all "copies" are deleted.
 
-          - Modifying the file will impact all "copies".
+            - Modifying the file will impact all "copies".
 
-            For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
+                For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
         !!! warning
+
             You can't create hard links for directories :bangbang:
 
             You can't cross file systems :bangbang:

@@ -331,6 +331,15 @@
       }
     },
     {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
       "name": "jennaortega",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -619,6 +628,15 @@
       }
     },
     {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
+      }
+    },
+    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -628,21 +646,21 @@
       }
     },
     {
+      "name": "ShieldBearer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ShieldBearer)$"
+      }
+    },
+    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(STUTTERSHIT)$"
-      }
-    },
-    {
-      "name": "SWTYBLZ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SWTYBLZ)$"
       }
     },
     {
