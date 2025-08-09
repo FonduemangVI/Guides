@@ -15,8 +15,8 @@ class ContributorsFetcher {
 
   shouldExcludeUser(user) {
     return this.excludedTypes.has(user.type) ||
-           user.login.toLowerCase().includes('bot') ||
-           this.excludedUsers.has(user.login);
+    user.login.toLowerCase().includes('bot') ||
+    this.excludedUsers.has(user.login);
   }
 
   createUserHtml(user) {
